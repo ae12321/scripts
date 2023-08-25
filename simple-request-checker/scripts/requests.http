@@ -1,0 +1,50 @@
+@baseUrl = http://localhost:3333/asdf/
+
+### 
+GET {{baseUrl}}/zxcv?name=akira&age=12
+Accept: text/html
+
+###
+
+POST {{baseUrl}}/zxcv/111?name=aki&age=123 HTTP/1.1
+Content-Type: application/json
+
+{
+    "test1": "value1",
+    "test2": 22,
+    "test3": false
+}
+
+###
+
+PUT {{baseUrl}}/zxcv/111?name=aki&age=123 HTTP/1.1
+Content-Type: application/json
+
+{
+    "test1": "value1",
+    "test2": 22,
+    "test3": false
+}
+
+
+###
+
+PATCH {{baseUrl}}/zxcv/111?name=aki&age=123 HTTP/1.1
+Content-Type: application/json
+
+{
+    "test1": "value1",
+    "test2": 22,
+    "test3": false
+}
+
+###
+
+DELETE {{baseUrl}}/zxcv/111?name=aki&age=123 HTTP/1.1
+Content-Type: application/json
+
+{
+    "test1": "value1",
+    "test2": 22,
+    "test3": false
+}
